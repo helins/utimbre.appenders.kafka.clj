@@ -1,5 +1,8 @@
 # Timbre appender for Apache Kafka
 
+[![Clojars
+Project](https://img.shields.io/clojars/v/dvlopt/utimbre.appenders.kafka.svg)](https://clojars.org/dvlopt/utimbre.appenders.kafka)
+
 Some code to make dreams come true.
 
 ## Usage
