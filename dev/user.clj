@@ -29,14 +29,19 @@
 
 (comment
   
-  (def m (M.consume/make {:deserializer-key   utimbre.appenders.kafka/deserializer-key
-                          :deserializer-value utimbre.appenders.kafka/deserializer-value}))
+
+  (def c 
+       (M.consume/make {:deserializer-key   utimbre.appenders.kafka/deserializer-key
+                        :deserializer-value utimbre.appenders.kafka/deserializer-value}))
 
   (M.consume/listen m
                     [["foo-log" 0]])
+
   (M.consume/rewind m)
 
-  (def p (M.produce/make))
+
+  (def p
+       (M.produce/make))
 
 
   (log/merge-config! {:appenders {::kafka (utimbre.appenders.kafka/make p
