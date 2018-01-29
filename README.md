@@ -4,7 +4,21 @@ Some code to make dreams come true.
 
 ## Usage
 
-Sorry, you'll have to figure out. Maybe there is some kind of documentation somewhere ?
+Read the [API](https://dvlopt.github.io/doc/utimbre.appenders.kafka/index.html)
+
+Everything is spec'ed and checked with clojure.spec.
+
+In short :
+
+```clj
+(require 'dvlopt.utimbre.appenders.kafka)
+
+
+(def appender
+     (dvlopt.utimbre.appenders.kafka/make kafka-producer
+                                          "my-topic"
+                                          "program-id"))
+```
 
 ## License
 
