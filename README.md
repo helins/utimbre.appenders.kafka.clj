@@ -8,7 +8,7 @@ Built using [µTimbre](https://github.com/dvlopt/utimbre).
 ## Usage
 
 Read the
-[API](https://dvlopt.github.io/doc/dvlopt/utimbre.appenders.kafka/index.html).
+[API](https://dvlopt.github.io/doc/clojure/dvlopt/utimbre.appenders.kafka/index.html).
 
 Everything is spec'ed and checked with clojure.spec.
 
